@@ -1,0 +1,40 @@
+{
+  "name": "react-native-use-debounced",
+  "version": "1.0.0",
+  "description": "A tiny TypeScript hook to get a debounced value (works in React and React Native)",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "test": "jest",
+    "prepare": "npm run build",
+    "lint": "eslint src --ext .ts,.tsx || true"
+  },
+  "keywords": [
+    "react",
+    "react-hook",
+    "debounce",
+    "react-native",
+    "typescript"
+  ],
+  "license": "MIT",
+  "peerDependencies": {
+    "react": ">=16.8"
+  },
+  "devDependencies": {
+    "@testing-library/react-hooks": "^8.0.0",
+    "@types/jest": "^29.0.0",
+    "@types/react": "^18.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.0.0",
+    "react": "^18.0.0",
+    "rimraf": "^3.0.2",
+    "tsup": "^6.0.0",
+    "typescript": "^5.0.0"
+  }
+}
